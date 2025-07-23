@@ -36,12 +36,14 @@ while True:
             print("Saque inválido. Verifique o saldo, limite ou número de saques.")
 
     elif opcao == "3":
-        print("Extrato:")
+        print(f"""
+              =========Extrato=========
+              - Saldo atual: R$ {saldo}
+              - Número de saques realizados: {numero_saques}
+              - Número de depósitos realizados: {depositos}
+              """)
         print(extrato if extrato else "Nenhuma transação realizada.")
-        print("Saldo atual: R$ {:.2f}".format(saldo))
-        print("Número de saques realizados: {}".format(numero_saques))
-        print("Número de depósitos realizados: {}".format(depositos))
-       
+        
     elif opcao == "4":
         print("Saindo do sistema. Até logo!")
         break
